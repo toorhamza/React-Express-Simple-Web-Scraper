@@ -2,6 +2,10 @@
 
  <b>Disclaimer</b>: Web scraping can be illegal. This app was created for educational purposes only. Any misuse of this application or the source code is sole responsibility of the user. The author is not liable for any sort of damages the user causes. Please use it responsibly.
  
+ # Requirements
+ 
+ Latest NodeJS must be installed on your computer. This app was tested with NodeJS version v11.8.0
+ 
  # How to Use It
  
  Instructions:
