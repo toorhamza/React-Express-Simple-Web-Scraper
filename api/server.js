@@ -2,9 +2,10 @@ const express = require('express')
 var cors = require('cors') // Enable CORS
 var timeout = require('express-timeout-handler');
 const app = express()
-const port = 8000
-
+const port = process.env.PORT || 8000
 const scraper = require('./scraper.js');
+
+app.use(express.static('client-build'))
 
 // Options for Timeout Module
 var options = {
@@ -20,8 +21,8 @@ var corsOptions = {
   }
 
   app.use(timeout.handler(options)); // Timeout package for express  
-  app.use(express.json());      
-  app.use(express.urlencoded({ extended: true })); 
+  app.use(express.json())
+  app.use(express.urlencoded({ extended: false }))
 
   app.options('*', cors(corsOptions)); 
 
@@ -29,6 +30,7 @@ var corsOptions = {
   app.post('/fetch', cors(corsOptions), async function(req, res) {
     const url = req.body.url;
     const selector = req.body.selector;
+
     
     // Calling scraper function
     const data = await scraper(url, selector);
@@ -42,4 +44,4 @@ var corsOptions = {
 }
 );
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`App listening on port ${port}!`));

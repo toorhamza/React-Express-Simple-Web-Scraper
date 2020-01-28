@@ -1,6 +1,10 @@
 # Simple Web Scraper
 
  <b>Disclaimer</b>: Web scraping can be illegal. This app was created for educational purposes only. Any misuse of this application or the source code is sole responsibility of the user. The author is not liable for any sort of damages the user causes. Please use it responsibly.
+
+ # Live Preview
+
+ You can test the app live here [https://still-dawn-41412.herokuapp.com/](https://still-dawn-41412.herokuapp.com/)
  
  # Requirements
  
