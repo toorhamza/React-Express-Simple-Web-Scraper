@@ -33,9 +33,5 @@
 
    1. Open the webpage you want to scrape the data from. Identify the data and copy the selector by right clicking on it and selecting      "Inspect". 
    2. Input the URL and the selector in the Application and click fetch. It should return the text written in that selector.
-
-# Please see the video below for demonstration of how the app works.
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/3R8VOc2WWfY/0.jpg)](https://www.youtube.com/watch?v=3R8VOc2WWfY)
  
 
